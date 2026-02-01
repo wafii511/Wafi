@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Accounts</title>
+
+<style>
+:root {
+  --bg:#0b0b0b;
+  --card:#151515;
+  --btn:#1f1f1f;
+  --text:#ffffff;
+}
+
+body.light {
+  --bg:#f1f1f1;
+  --card:#ffffff;
+  --btn:#e5e5e5;
+  --text:#000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: var(--btn);
+  border: none;
+  color: var(--text);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card {
+  width: 90%;
+  max-width: 360px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* GitHub icon */
+.github {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.github svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--text);
+  transition: 0.3s;
+}
+
+.github:hover svg {
+  opacity: 0.7;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #f5c400;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.btn {
+  display: block;
+  background: var(--btn);
+  color: var(--text);
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 14px;
+  margin: 10px 0;
+  transition: 0.25s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  opacity: 0.85;
+}
+
+/* by 7n0z text */
+.by {
+  margin-top: 22px;
+}
+
+.by a {
+  color: var(--text);
+  text-decoration: underline;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<button class="toggle" onclick="toggleTheme()">🌓</button>
+
+<div class="card">
+
+
+  <!-- غير الصورة -->
+  <img src="https://files.catbox.moe/wl4nj5.webp" class="avatar">
+
+  <h1>My Accounts</h1>
+
+  <a class="btn" href="https://discord.com/users/1360956507293876436" target="_blank">Discord</a>
+  <a class="btn" href="https://discord.gg/lander" target="_blank">Lander Community</a>
+  <a class="btn" href="https://www.roblox.com/ar/users/1791638867/profile?friendshipSourceType=PlayerSearch" target="_blank">Roblox</a>
+
+  <div class="by">
+    <a href="https://discord.com/users/1360956507293876436" target="_blank">
+      𝐛𝐲 𝐖𝐚𝐟𝐢 🇧🇹
+    </a>
+  </div>
+
+</div>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
